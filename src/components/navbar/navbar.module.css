@@ -1,3 +1,69 @@
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.white{
+    background-color: white;
+}
+.white .navbar{
+    padding-block: 20px;
+}
+.white .navbar .navbar__container .navbar__container_btn {
+    background-color: var(--purple);
+    color: white;
+}
+.transp{
+    background-color: black;
+}
+/* 128 min height  */
+.transp .navbar{
+    padding-block: 40px;
+}
 .navbar{
-    color: red;
+    
+    padding-inline:  24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 300ms ease-in-out;
+}
+
+.navbar__container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.navbar__container_menu{
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+}
+.navbar__container_menu > li a{
+    text-decoration: none;
+    color: var(--obscurepurple);
+    padding-block: 10px;
+    border-bottom: 2px solid transparent;
+    transition: 300ms ease-in-out;
+}
+.navbar__container_menu > li a:hover{
+    border-color: var(--purple);
+}
+.navbar__container_btn{
+    background-color: white;
+    padding: 10px 34px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: var(--obscurepurple);
+    font-weight: 700;
+
+    transition: 300ms ease-in-out;
+}
+.navbar__container_btn:hover{
+    background-color: var(--purple);
+    color: white;
 }
