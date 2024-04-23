@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+  --obscurepurple: #4e4b66;
+  --purple: #4253ed;
+
+
+}
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -45,4 +51,18 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+/* container */
+
+@media screen and (min-width:1200px) {
+  .container{
+    max-width: 1058px;
+    margin-inline: auto;
+  }
+}
+
+body{
+  min-height: 200vh;
+  position: relative;
 }
