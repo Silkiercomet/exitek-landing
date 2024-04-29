@@ -3,7 +3,9 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 99;
 
+    transition: 500ms ease-in-out;
 }
 .white{
     background-color: white;
@@ -16,7 +18,7 @@
     color: white;
 }
 .transp{
-    background-color: black;
+    background-color: transparent;
 }
 /* 128 min height  */
 .transp .navbar{
