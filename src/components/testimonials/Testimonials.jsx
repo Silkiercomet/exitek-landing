@@ -32,7 +32,7 @@ const Testimonials = () => {
   return (
     <ul className={style.testimonials}>
         {
-            content.map((e) => <Testimonial title={e.title} img={e.img} sub={e.sub} />)
+            content.map((e) => <Testimonial title={e.title} img={e.img} sub={e.sub} key={e.title}/>)
         }
     </ul>
   )

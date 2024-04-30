@@ -3,7 +3,10 @@
   --obscurepurple: #4e4b66;
   --purple: #4253ed;
   --grayText: #999aa3;
+  --obscureText: #080226;
 
+  --secondaryHeader: 48px;
+  --secondaryHeadermobile: 32px;
 }
 /*
   1. Use a more-intuitive box-sizing model.

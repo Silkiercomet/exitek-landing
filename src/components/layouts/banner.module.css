@@ -1,0 +1,40 @@
+.banner{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    min-height: 494px;
+    color: white;
+
+    /* interestinf */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.664)), url(../../assets/bannerFooter.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    margin-top: 88px;
+}
+.banner p:first-child{
+    font-size: var(--secondaryHeader);
+    font-weight: 700;
+}
+.banner > *{
+    max-width: 700px;
+}
+.banner_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+    color: var(--obscureText);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+
+    max-width: 238px;
+    padding: 16px 28px;
+
+    border-radius: 100px;
+    margin-inline: auto;
+    margin-top: 48px;
+}

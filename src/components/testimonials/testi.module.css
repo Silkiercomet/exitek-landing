@@ -12,8 +12,35 @@
     list-style: none;
     border-radius: 32px;
 
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     transform: translateY(-80px);
+    gap: 1.5rem;
+}
+.testimonials__element{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.testimonials__element img{
+    max-width: 52px;
+    max-height: 52px;
+}
+@media screen and (max-width: 1240px) {
+    .testimonials{
+        grid-template-columns: repeat(2, minmax(177px, 1fr));
+        max-width: 680px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .testimonials__element{
+        flex-direction: row;
 
+    }
+    .testimonials{
+        gap: 2rem;
+        grid-template-columns: 1fr;
+        transform: translateY(-60px);
+        
+    }
 }

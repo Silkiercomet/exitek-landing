@@ -1,0 +1,36 @@
+.relative{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.absolute{
+    position: absolute;
+}
+.bottom{
+    bottom: -20px;
+    max-width: 440px;
+}
+
+.center{
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+.left{
+    left: -15px;
+}
+.main{
+    max-height: 626px;
+}
+.top{
+    top: -20px;
+}
+.left3{
+    left: -35px;
+}
+.last{
+    width: 150px;
+    height: 155px;
+    bottom: -34px;
+    left: -37px;
+}
