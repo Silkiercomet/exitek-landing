@@ -37,4 +37,17 @@
     border-radius: 100px;
     margin-inline: auto;
     margin-top: 48px;
+
+    transition: 300ms ease-in-out;
+}
+
+.banner_btn:hover{
+    background-color: var(--purple);
+    color: white;
+}
+.banner_btn:hover i svg path{
+    transition: 350ms ease-in-out;
+}
+.banner_btn:hover i svg path{
+    fill: white;
 }
