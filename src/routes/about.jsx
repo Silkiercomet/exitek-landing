@@ -1,8 +1,12 @@
-import React from 'react'
+import Banner from '../components/layouts/Banner'
+import HeroAbout from '../components/layouts/HeroAbout'
 
 const About = () => {
   return (
-    <div>about</div>
+    <>
+    <HeroAbout />
+    <Banner />
+    </>
   )
 }
 

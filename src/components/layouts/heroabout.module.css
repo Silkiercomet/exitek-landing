@@ -1,0 +1,73 @@
+.heroAbout{
+    min-height: 100vh;
+
+    background-image: url(../../assets/main/top-circle-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heroAbout div{
+    padding-top: 180px;
+    padding-bottom: 40px;
+}
+.heroAbout div header h1{
+    font-size: var(--primaryHeader);
+    text-align: center;
+    color: white;
+}
+.heroAbout div header p{
+    text-align: center;
+    color: var(--grayText);
+    max-width: 680px;
+    margin-inline: auto;
+}
+
+.heroAbout__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+
+    list-style: none;
+    padding-left: 0;
+}
+
+.heroAbout__list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.heroAbout__list li:not(:last-of-type){
+    border-right: 1px solid var(--obscurepurple);
+
+}
+.heroAbout__list li strong{
+    font-size: 68px;
+    color: white;
+    
+}
+.heroAbout__list li span{
+    color: var(--grayText);
+    
+}
+@media screen and (max-width: 1000px) {
+    .heroAbout__list{
+
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .heroAbout div{
+        padding-inline: 1rem;
+    }
+    .heroAbout__list li:nth-child(2){
+        border-right: 1px solid transparent;
+    
+    }
+    .heroAbout div header h1{
+        font-size: var(--primaryHeaderMobile);
+  
+    }
+}
