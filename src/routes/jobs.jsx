@@ -1,8 +1,7 @@
 import React from "react";
-import { Form, useLoaderData, Link } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import { getJob } from "../components/utils/ContentArrays";
 import JoinTheTeam from "../components/forms/JoinTheTeam";
-import arrow from "../assets/arrow.svg";
 export async function loader({ params }) {
   const job = await getJob(params.careersId);
   return { job };
@@ -14,7 +13,7 @@ const Jobs = () => {
   return (
     <>
       <header>
-        <a src={"./careers"}>
+        <a src="./careers">
           <svg
             xmlns="http://www.w3.org/2000/png"
             width="32"
