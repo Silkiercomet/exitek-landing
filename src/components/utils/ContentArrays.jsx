@@ -19,7 +19,7 @@ export const jobs = [
             "Remote work"
         ],
         salary : [3000, 6000]
-    }
+    },
 ]
 
 export function getJob(job){
@@ -28,6 +28,9 @@ export function getJob(job){
     
     return newJob
 }
+export const jobTitles = jobs.map(e => {
+  return {title: e.title, id: e.id}
+})
 
 //------- careers list
 import house from "../../assets/careers/house.svg"
