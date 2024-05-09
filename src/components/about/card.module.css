@@ -1,0 +1,19 @@
+.card{
+    display: grid;
+    
+    max-width: 270px;
+}
+
+.card img{
+    margin-bottom: 1.5rem;
+}
+.card h3{
+    color: var(--obscureText);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.card p{
+    color: var(--obscurepurple);
+    line-height: 30px;
+}
