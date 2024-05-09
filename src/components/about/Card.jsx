@@ -1,10 +1,10 @@
-import React from 'react'
+import style from "./card.module.css"
 
 const Card = ({title, content, icon}) => {
   return (
-    <div>
+    <div className={style.card}>
         <img src={icon} alt="icon placeholder" />
-        <h2>{title}</h2>
+        <h3>{title}</h3>
         <p>{content}</p>
     </div>
   )
