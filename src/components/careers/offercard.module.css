@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    gap: 22px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.container__text{
+    max-width: 730px;
+}
+.container__text h3{
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--obscureText);
+}
+.container__text p{
+    padding-top: 16px;
+    color: var(--obscurePurple);
+}
+
+@media screen and (max-width:800px) {
+    .container{
+        max-width: 90%;
+
+    }
+    .container__text h3{
+
+        font-size: 18px;
+
+    }
+    .container__text p{
+        padding-top: 10px;
+
+    }
+}
+@media screen and (max-width:500px) {
+    .container{
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+}

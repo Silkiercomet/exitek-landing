@@ -12,6 +12,7 @@ import About from './routes/about.jsx'
 import Navbar from './components/navbar/Navbar.jsx';
 import Footer from './components/footer/Footer.jsx';
 import Jobs, {loader as careerLoader} from './routes/jobs.jsx';
+import {loader as jobTitlesLoader} from "./routes/careers.jsx"
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/careers",
-    element: <Careers />
+    element: <Careers />,
+    loader: jobTitlesLoader
   },
   {
     path: "/careers/:careersId",

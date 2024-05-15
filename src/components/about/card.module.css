@@ -17,3 +17,60 @@
     color: var(--obscurepurple);
     line-height: 30px;
 }
+
+.jobcard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 32px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+
+    -webkit-box-shadow: -1px 11px 39px -2px rgba(0,0,0,0.26);
+    -moz-box-shadow: -1px 11px 39px -2px rgba(0,0,0,0.26);
+    box-shadow: -1px 11px 39px -2px rgba(0,0,0,0.26);
+}
+.jobcard a{
+    text-decoration: none;
+    color: var(--purple);
+    border-radius: 100px;
+    padding: 12px 24px;
+    border: 1.5px solid var(--purple);
+    transition: 300ms ease-in-out;
+    font-weight: 700;
+}
+.jobcard a:hover{
+    background-color: var(--purple);
+    color:white;
+    border: 1.5px solid white;
+}
+.JobCard_info h5{
+    font-size: 22px;
+    color: var(--obscureText);
+    margin-bottom: 1rem;
+}
+.JobCard_info div, .JobCard_info div span{
+    display: flex;
+    gap: 1rem;
+}
+@media screen and (max-width:1160px) {
+    .jobcard{
+        width: 90%;
+        margin-inline: auto;
+    }
+}
+@media screen and (max-width:800px) {
+    .jobcard{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .jobcard a{
+        width: 80%;
+        text-align: center;
+    }
+    .JobCard_info div{
+        align-items: center;
+        justify-content: center;
+    }
+}

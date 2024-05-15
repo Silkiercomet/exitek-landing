@@ -21,7 +21,45 @@
     align-items: center;
     gap: 3.7vw;
 }
+.valuesContainer{
+    display: grid;
+}
+.valuesContainer h3{
+    font-size: var(--secondaryHeader);    
+    text-align: center;
+    padding-block: 55px;
+    color: var(--obscureText);
+}
+.careers{
+    display: grid;
+    place-items: center;
+}
+.careers__positions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+.careers__positions h4{
+    margin-inline: auto;
+}
+.careers h2, .careers__positions h4{
+    padding-block: 80px;
+    font-size: var(--secondaryHeader);
+    color: var(--obscureText);
+}
+.Careersbg{
+    background-color: white;
+}
+.offerslist{
+    display: grid;
+    gap: 20px;
+    list-style: none;
+}
+.careers__positions ul{
+    list-style: none;
+    padding-left: 0;
+}
 @media screen and (max-width:1000px) {
 
     .aboutWrapper h2{
@@ -31,7 +69,7 @@
 }
 @media screen and (max-width:870px) {
     .aboutWrapper{
-        max-width: 80% ;
+        max-width: 90% ;
         margin-inline: auto;
     }
     .card__container{

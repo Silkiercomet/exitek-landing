@@ -20,7 +20,7 @@ const About = () => {
         <Card title={"Creative visionaries"} content={"Our diverse team of artists, developers, and visionaries collaborates seamlessly to create tools that empower creators worldwide."} icon={upArrow} />
       </div>
     </section>
-    <section>
+    <section className={`container ${style.valuesContainer}`}>
       <h3>Our values</h3>
       <div>
         <OurValuesCard title={"Growth"} content={"We are goal-orientated, effective and fast. We learn from our mistakes. Personal development is just as important as the development of the entire company."} />
