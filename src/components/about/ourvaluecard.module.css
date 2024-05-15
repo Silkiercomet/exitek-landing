@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    gap: 10px;
+    padding-block: 72px;
+    
+}
+.container:first-of-type{
+    padding-top: 0;
+}
+.container:not(:last-child){
+    border-bottom: 1px solid rgba(213, 213, 222, .7);
+}
+.container h4{
+    flex: 0.8;
+    font-size: 30px;
+    color: var(--obscureText);
+}
+.container p{
+    flex: 1.2;
+    color: var(--obscurepurple);
+}
+
+@media screen and (max-width:870px) {
+    .container{
+        flex-direction: column;
+        max-width: 90%;
+        margin-inline: auto;
+    }
+}

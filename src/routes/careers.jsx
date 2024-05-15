@@ -1,31 +1,35 @@
-import React from 'react'
 import { careerList, jobTitles } from "../components/utils/ContentArrays";
-import AboutCard from '../components/about/AboutCard';
 import JobCard from '../components/about/JobCard';
+import CareersHero from '../components/layouts/CareersHero';
+import OfferCard from '../components/careers/OfferCard';
+import style from "./routes.module.css"
+import { useLoaderData } from "react-router-dom";
 
-
+export async function loader({ params }) {
+  const jobs = await jobTitles();
+  return { jobs };
+}
 const Careers = () => {
+  
+  const { jobs } = useLoaderData();
   return (
-    <>
-      <div>
-        <h1>Be part of our mission</h1>
-        <p>We invite you to join us in a journey of innovation and creativity. Our mission is to revolutionize the way people edit and transform visuals using the power of AI technology.</p>
-        <a href='#positions'>View Openings</a>
-      </div>
-      <section>
+    <div className={style.Careersbg}>
+      <CareersHero />
+      <section className={`container ${style.careers}`}>
         <h2>
           What we offer you
         </h2>
-        <ul>
-          {careerList.map((e,i) => <AboutCard icon={e.icon} content={e.content} title={e.title} key={e.title+i} />)}
+        <ul className={style.offerslist}>
+          {careerList.map((e,i) => <OfferCard icon={e.icon} content={e.content} title={e.title} key={e.title+i} />)}
         </ul>
       </section>
-      <section>
+      <section className={`container ${style.careers__positions}`} id="positions">
         <h4>Open positions</h4>
-        {jobTitles.map((e) => <JobCard title={e.title} id={e.id} key={e.id}/>)}
-        
+        <ul>
+        {jobs.map((e) => <JobCard title={e.title} id={e.id} key={e.id}/>)}
+        </ul>
       </section>
-    </>
+    </div>
   )
 }
 

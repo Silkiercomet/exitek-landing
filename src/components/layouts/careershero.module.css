@@ -1,0 +1,59 @@
+.hero{
+    padding-top: 180px;
+    min-height: 80vh;
+
+    background-image: url(../../assets/careers/contact-us-bg.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero .hero__container{
+    display: grid;
+    place-items: center;
+    gap: 35px;
+}
+.hero .hero__container h1{
+    font-size: var(--primaryHeader);
+    color: white;
+    text-align: center;
+}
+.hero .hero__container p{
+    color: var(--grayText);
+    max-width: 780px;
+    text-align: center;
+}
+.hero .hero__container a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 48px;
+
+    background-color: var(--purple);
+    border-radius: 100px;
+    font-weight: 600;
+    transition: 300ms ease-in-out;
+}
+.hero .hero__container a:hover{
+    -webkit-box-shadow: -1px 0px 18px 0px rgba(66,83,237,1);
+    -moz-box-shadow: -1px 0px 18px 0px rgba(66,83,237,1);
+    box-shadow: -1px 0px 18px 0px rgba(66,83,237,1);
+    
+    background-color: white;
+    color: var(--purple);
+}
+
+@media screen and (max-width:900px) {
+    .hero{
+        padding-inline: 20px;
+    }
+    .hero .hero__container h1{
+        font-size: var(--primaryHeaderMobile);
+        color: white;
+        text-align: center;
+    }
+}
+@media screen and (max-width:600px) {
+    .hero{
+        padding-inline: 20px;
+        min-height: 100vh;
+    }
+}

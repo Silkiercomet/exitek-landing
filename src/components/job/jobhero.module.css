@@ -1,0 +1,54 @@
+.jobhero{
+    padding-top: 180px;
+    min-height: 50vh;
+    padding-left: 64px;
+
+    background-image: url(../../assets/careers/contact-us-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: grid;
+}
+.jobhero div{
+    max-width: 1058px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin-inline: auto;
+}
+.jobhero div a{
+    margin-right: auto;
+}
+.jobhero div a div{
+    display: grid;
+    place-items: center;
+    max-width: 48px;
+    min-width: 48px;
+    min-height: 48px;
+    border: 1px solid var(--lightbg);
+    border-radius: 50%;
+}
+.jobhero div h1{
+    font-size: var(--primaryHeader);
+    color: white;
+    padding-block: 32px;
+}
+
+@media screen and (max-width:800px) {
+    .jobhero div h1{
+        font-size: var(--primaryHeaderMobile);
+        color: white;
+        padding-block: 32px;
+    }
+    .jobhero div{
+        width: 90%;
+
+    }
+    .jobhero{
+
+        padding-left: 0;
+
+    }
+}
