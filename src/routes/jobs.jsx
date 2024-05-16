@@ -1,8 +1,8 @@
-import React from "react";
 import { useLoaderData } from "react-router-dom";
 import { getJob } from "../components/utils/ContentArrays";
 import JoinTheTeam from "../components/forms/JoinTheTeam";
 import JobHero from "../components/job/JobHero";
+import style from "./routes.module.css"
 export async function loader({ params }) {
   const job = await getJob(params.careersId);
   return { job };
@@ -14,7 +14,7 @@ const Jobs = () => {
   return (
     <>
       <JobHero title={job.title} />
-      <main className="container">
+      <main className={`${style.jobContainer} container`}>
         <p>{job.about}</p>
         <div>
           <h2>What will you do:</h2>

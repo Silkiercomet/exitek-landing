@@ -39,6 +39,8 @@
     flex-direction: column;
     justify-content: center;
 
+    padding-bottom: 100px;
+
 }
 .careers__positions h4{
     margin-inline: auto;
@@ -60,6 +62,90 @@
     list-style: none;
     padding-left: 0;
 }
+
+/*------------ job -------------------*/
+
+.jobContainer{
+    margin-top: 40px;
+    display: grid;
+    gap: 56px;
+
+    color: var(--obscureText);
+}
+.jobContainer *:is(h1, h2, h3, h4, h5, h6) {
+    font-size: 26px;
+    padding-bottom: 12px;
+}
+.jobContainer *:is(ul) {
+    padding-left: 20px;
+    display: grid;
+    gap: 12px;
+}
+
+/*------------ job -------------------*/
+
+/*------------ contact -------------------*/
+
+.contact{
+    min-height: 100vh;
+    padding-top: 180px;
+
+    background-image: url(../assets/careers/contact-us-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact{
+    min-height: 100vh;
+    display: block;
+    place-content: center;
+    background-image: url(../assets/careers/contact-us-bg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.contact_hero{
+    display: flex;
+}
+.contact_hero > *:first-child{
+
+    flex: 0.7;
+}
+.contact_hero > *:last-child{
+
+    display: grid;
+    place-items: center;
+    flex: 1.3;
+}
+.contact_hero div h1{
+    font-size: var(--primaryHeader);
+    color: white;
+}
+.contact_hero div p{
+
+    color: var(--grayText);
+}
+.contact_hero div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 603px;
+    background-color: rgba(255, 255, 255, .06);
+    -webkit-backdrop-filter: blur(26px);
+    backdrop-filter: blur(26px);
+    padding: 28px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.arrowContact{
+    margin-left: auto;
+}
+/*------------ contact -------------------*/
 @media screen and (max-width:1000px) {
 
     .aboutWrapper h2{
@@ -75,5 +161,22 @@
     .card__container{
         gap: 45px;
     }
-
+    .jobContainer{
+        margin-top: 30px;
+        gap: 36px;
+    
+        max-width: 90%;
+        margin-inline: auto;
+    }
+    .contact_hero{
+        flex-direction: column;
+        gap: 25px;
+        max-width: 90%;
+        margin-inline: auto;
+        text-align: center;
+    }
+    .contact_hero div h1{
+        font-size: var(--primaryHeaderMobile);
+        color: white;
+    }
 }

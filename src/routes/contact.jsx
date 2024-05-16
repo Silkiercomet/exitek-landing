@@ -1,10 +1,13 @@
+import style from "./routes.module.css"
 const Contact = () => {
   return (
-    <section>
+    <section className={`${style.contact} ` }>
+      <div className={`${style.contact_hero} container`}>
       <div>
         <h1>Let’s talk</h1>
-        <p>Got a question about Exitek? Let us know.</p>
+        <p>Got a question about Exitek?<br/> Let us know.</p>
       </div>
+      <div>
       <a href="mailto:info@exitek.io">
         <i>
           <svg
@@ -21,13 +24,14 @@ const Contact = () => {
           </svg>
         </i>
         <span>info@exitek.io</span>
-        <i>
+        <i className={style.arrowContact}  >
           <svg
             xmlns="http://www.w3.org/2000/png"
             width="32"
             height="32"
             viewBox="0 0 32 32"
             fill="none"
+
           >
             <path
               fill-rule="evenodd"
@@ -38,6 +42,8 @@ const Contact = () => {
           </svg>
         </i>
       </a>
+      </div>
+      </div>
     </section>
   );
 };
